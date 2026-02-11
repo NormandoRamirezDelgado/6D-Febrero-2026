@@ -4,7 +4,7 @@ void main() {
   int edad = 28;
          
   print((edad > 18) || tieneTitulo);  // OR: true
-  print(esEstudiante || (edad > 18));  // OR: true
+  //print(esEstudiante || (edad > 18));  // OR: true
   print(!esEstudiante);                // NOT: false
 
   /*
