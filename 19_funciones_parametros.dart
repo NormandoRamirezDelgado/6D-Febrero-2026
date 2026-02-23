@@ -12,5 +12,4 @@ void main() {
 
   //De otra forma es:
   print(operacion(20, 2));
-
 }
