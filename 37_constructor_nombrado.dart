@@ -30,7 +30,7 @@ void main() {
   var vehiculoCamioneta = Vehiculo.camioneta('Chevrolet', 2027);
   var vehiculoCamionetaDos = Vehiculo.camioneta('Nissan', 2028);
 
-  //vehiculoUno.mostrar(); // Honda - Auto (2022)
+  vehiculoUno.mostrar(); // Honda - Auto (2022)
   vehiculoDos.mostrar(); // Desconocida - Auto (2000)
   vehiculoTres.mostrar(); // Desconocida - Auto (2000) // Yamaha - Moto (2021)
   vehiculoCuatro.mostrar(); // Desconocida - Auto (2000) // Yamaha - Moto (2021)
