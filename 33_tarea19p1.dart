@@ -78,4 +78,5 @@ void productoCaroBarato(Map<String, double> productos) {
 
 void main() {
   Map<String, double> productos = {};
+  print(productos);
 }
