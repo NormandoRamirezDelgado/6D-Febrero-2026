@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field
+
 class Empleado {
   String _nombre;
   double _salario;
