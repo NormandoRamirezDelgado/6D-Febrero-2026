@@ -56,41 +56,55 @@ class _CounterFunctionsScreenState extends State<CounterFunctionsScreen> {
         floatingActionButton: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            FloatingActionButton(
-              shape: StadiumBorder(),
-              onPressed: () {
-                //clickCounter = clickCounter + 1;
-                setState(() {});
-                clickCounter = 0;
+            
+            CustomButton(
+              icon: Icons.refresh_outlined, 
+              onPressed:() {
+                setState(() {
+                  clickCounter = 0;
+                });
               },
-              child: Icon(Icons.refresh_outlined),
             ),
-
             SizedBox(height: 15,),
-
-            FloatingActionButton(
-              shape: StadiumBorder(),
+            CustomButton(
+              icon: Icons.plus_one_outlined, 
               onPressed: () {
-                //clickCounter = clickCounter + 1;
                 setState(() {});
                 clickCounter++;
               },
-              child: Icon(Icons.plus_one),
             ),
-
             SizedBox(height: 15,),
-
-            FloatingActionButton(
-              shape: StadiumBorder(),
+            CustomButton(
+              icon: Icons.exposure_minus_1_outlined, 
               onPressed: () {
-                //clickCounter = clickCounter + 1;
-                setState(() {});
                 clickCounter--;
+                setState(() {});
               },
-              child: Icon(Icons.exposure_minus_1_outlined),
             ),
           ],
         ),
       );
   }
 }
+
+class CustomButton extends StatelessWidget {
+
+  final IconData icon;
+  final VoidCallback? onPressed;
+
+  const CustomButton({
+    super.key, 
+    required this.icon, 
+    this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      //shape: StadiumBorder(),
+      onPressed: onPressed,
+      child: Icon(icon),
+    );
+  }
+}
+
