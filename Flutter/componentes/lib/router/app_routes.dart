@@ -14,6 +14,7 @@ class AppRoutes {
       name: 'Home screen', 
       screen: HomeScreen()
     ),
+    
     MenuOption(route: 'listview1', icon: Icons.list, name: 'ListView Tipo 1', screen: ListView1Screen()),
     MenuOption(route: 'listview2', icon: Icons.list_alt_outlined, name: 'ListView Tipo 2', screen: ListView2Screen()),
     MenuOption(route: 'alert', icon: Icons.add_alert_outlined, name: 'Alertas - Alert', screen: AlertScreen()),
@@ -29,14 +30,6 @@ class AppRoutes {
     }
     return appRoutes;
   }
-
-  // static Map<String, Widget Function(BuildContext)> routes = {
-  //   'home'      : (BuildContext context) => HomeScreen(),
-  //   'listview1' : (BuildContext context) => ListView1Screen(),
-  //   'listview2' : (BuildContext context) => ListView2Screen(),
-  //   'alert'     : (BuildContext context) => AlertScreen(),
-  //   'card'      : (BuildContext context) => CardScreen(),
-  // };
 
   static Route<dynamic> onGenerateRoute(RouteSettings settings) {
 
